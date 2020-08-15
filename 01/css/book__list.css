@@ -1,0 +1,29 @@
+.items {
+    height: 8vh;
+    font-family: 'jua';
+    font-size: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items:nth-child(odd) {
+    background-color: lightsalmon;
+}
+
+.items:nth-child(even) {
+    background-color: rgb(255, 180, 151);
+}
+
+.ctnt1 {
+    margin-left: 100px;
+}
+
+.ctnt2 {
+    margin-right: 70px;
+    display: flex;
+}
+
+.ctnts {
+    padding: 0 20px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>서재 관리 시스템</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <script src="https://kit.fontawesome.com/8970b8107d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <header class="header">
+      <section class="bg1"></section>
+      <ul class="header__wrap">
+          <li class="headerList list__1">
+              <span><i class="fas fa-swatchbook fa-2x"></i></span>
+              <span>도서 관리 프로그램</span>
+          </li>
+          <li class="headerList list__2">
+              <span>관리자 : </span><input id="name" type="text" placeholder="이름은 신중하게"><span class="hover insName">입력</span>
+          </li>
+      </ul>
+    </header>
+    <section class="section">
+        <input type="text" class="sectionIpt" id="ipt1" placeholder="책이름">
+        <input type="text" class="sectionIpt" id="ipt2" placeholder="저자">
+        <input type="text" class="sectionIpt" id="ipt3" placeholder="페이지 수">
+        <input type="text" class="sectionIpt" id="ipt4" placeholder="가격">
+        <span class="hover insBookInfo">책입력</span>
+    </section>
+    <ul class="book__list"></ul>
+    <script src="../js/saveName.js"></script>
+    <script src="../js/addBook.js"></script>
+  </body>
+</html>

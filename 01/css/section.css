@@ -1,0 +1,48 @@
+.section {
+    display: none;
+    height: 20vh;
+    background-color: lightcoral;
+}
+
+.SHOW_ON {
+    font-family: 'jua', 'serif-sans';
+    font-size: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+        ". ipt1 ipt2 ."
+        ". ipt3 ipt4 ."
+        ". . info ."
+    ;
+}
+
+.sectionIpt {
+    font-family: 'jua';
+    font-size: 100%;
+    align-self: center;
+    padding-left: 15px;
+}
+
+#ipt1 {
+    grid-area: ipt1;
+}
+
+#ipt2 {
+    grid-area: ipt2;
+}
+
+#ipt3 {
+    grid-area: ipt3;
+}
+
+#ipt4 {
+    grid-area: ipt4;
+}
+
+.insBookInfo {
+    grid-area: info;
+    align-self: center;
+    justify-self: flex-end;
+}

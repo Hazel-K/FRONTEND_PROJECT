@@ -1,0 +1,52 @@
+.header {
+    position: relative;
+    font-family: 'jua', 'serif-sans';
+}
+
+.bg1 {
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    background-color: lightcoral;
+    z-index: -1;
+}
+
+.header__wrap {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+}
+
+.list__1 {
+    margin-left: 50px;
+    align-self: center;
+}
+
+.list__1>span {
+    padding: 10px;
+}
+
+.list__2 {
+    text-align: end;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    align-self: flex-end;
+    justify-self: flex-start;
+}
+
+.list__2>span {
+    padding: 10px;
+}
+
+.list__2>input {
+    font-family: 'jua';
+    font-size: 100%;
+    width: 50%;
+    padding-left: 15px;
+}
+
+.hover:hover {
+    color: ivory;
+    cursor: pointer;
+}
