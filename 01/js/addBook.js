@@ -4,6 +4,10 @@ const PRIMARYKEY = "PK";
 let bookList = [];
 let pkCnt = 0;
 
+function priceFormat(number) {
+    return number.valueOf().toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
 function savePK() {
     localStorage.setItem(PRIMARYKEY, pkCnt);
 }
@@ -19,7 +23,7 @@ function saveList() {
 }
 
 function showInfo(obj) {
-    alert(`제목 : ${obj.title}\n저자 : ${obj.author}\n페이지 : ${obj.volume}p\n가격 : ${obj.price}원\n`);
+    alert(`제목 : ${obj.title}\n저자 : ${obj.author}\n페이지 : ${obj.volume}p\n가격 : ${priceFormat(obj.price)}원\n`);
 }
 
 function delBook() {
