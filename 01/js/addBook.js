@@ -102,6 +102,7 @@ function paintList(obj) {
 
 function loadBookList() {
     const tempArr = localStorage.getItem(BOOKSTORAGE);
+    const tempPK = loadPK();
     if (tempArr != null) {
         const parsedItem = JSON.parse(tempArr);
         parsedItem.forEach(function(item) {
@@ -109,7 +110,9 @@ function loadBookList() {
         });
         bookList = parsedItem;
     }
-    pkCnt = loadPK();
+    if (tempPK != null) {
+        pkCnt = tempPK;
+    }
 }
 
 function init() {
